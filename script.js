@@ -107,7 +107,7 @@ TODO4: Dammam Weather Now
 Use the OpenWeatherMap API to display live weather data.
 
 🌍 API Link:
-https://api.openweathermap.org/data/2.5/weather?q=Dammam&appid=API_KEY=metric
+https://api.openweathermap.org/data/2.5/weather?q=Dammam&appid=e2e89827126db0b883ea36cb8de51be2=metric
 
 ⚠️ Replace YOUR_API_KEY with your actual API key from:
 https://openweathermap.org/api
