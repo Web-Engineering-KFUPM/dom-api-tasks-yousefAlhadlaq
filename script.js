@@ -76,6 +76,28 @@ Use:
 data.content   // the quote text
 data.author    // the author
 */
+const quoteBtn = document.getElementById("t3-loadQuote");
+const quoteAuthor = document.getElementById("t3-author");
+const quoteText = document.getElementById("t3-quote");
+
+quoteBtn.addEventListener("click", function () {
+    fetch("https://dummyjson.com/quotes/random")
+  .then(function (response) {
+    if (!response.ok) {                 
+      throw new Error("HTTP " + response.status);
+    }
+    return response.json();             
+  })
+  .then(function (data) {
+    // use the JSON data here
+    quoteText.innerHTML = data.quote;
+    quoteAuthor.innerHTML = data.author;
+  })
+  .catch(function (err) {
+    // show a friendly message or handle the error
+    console.error(err);
+  });
+});
  
 
 /*  
