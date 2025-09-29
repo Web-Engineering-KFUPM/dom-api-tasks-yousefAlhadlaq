@@ -131,6 +131,7 @@ const weatherWind = document.getElementById("t4-wind");
 
 weatherBtn.addEventListener("click", function () {
     fetch("https://api.openweathermap.org/data/2.5/weather?q=Dammam&appid=e2e89827126db0b883ea36cb8de51be2&units=metric")
+    
   .then(function (response) {
     if (!response.ok) {                 
       throw new Error("HTTP " + response.status);
